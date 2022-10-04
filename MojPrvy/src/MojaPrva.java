@@ -24,6 +24,16 @@ public class MojaPrva {
 		System.out.print("Janko ");
 		System.out.println("Hrasko");
 		
+		System.out.println(10 + 3);
+		
+		System.out.println("10 + 3");
+		
+		System.out.println("Janko" + "Hrasko");
+		
+		System.out.println("10" + 3);
+		
+		System.out.println("10 + 3 = " + (10 + 3));
+		
 		
 		
 		

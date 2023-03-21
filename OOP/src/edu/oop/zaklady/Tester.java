@@ -27,7 +27,23 @@ public class Tester {
 		o.info();
 		o2.info();
 		
+		Obdlznik obd = new Obdlznik();
+		obd.x = 10;
+		obd.y = 10;
+		obd.dlzka = 100;
+		obd.sirka = 200;
+		obd.farba = "cervena";
 		
+		obd.info();
+		obd.posun(1, 1);
+		obd.info();
+		System.out.println("----------");
+		obd.info(true);
+		
+		
+		o.pridajZnamku(4);
+		o.pridajZnamku(2);
+		o.vypisZnamok();
 
 	}
 

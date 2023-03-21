@@ -6,6 +6,7 @@ public class Osoba {
 	String meno;
 	String priezvisko;
 	int vek;
+	int[] znamkyZPRO = new int[10];
 	
 	
 	//metody
@@ -25,6 +26,35 @@ public class Osoba {
 		String vypis = "";		
 		vypis = meno + " " + priezvisko;
 		return vypis;
+	}
+	
+	int pocetZnamok() {
+		int pocet = 0;
+		for(int i = 0; i < znamkyZPRO.length; i++) {
+			if(znamkyZPRO[i] != 0) {
+				pocet++;
+			}
+		}
+		return pocet;
+	}
+	
+	void pridajZnamku(int znamka) {
+		if(pocetZnamok() > 9) {
+			System.out.println("Max kapacita znamok");
+		}else {
+			znamkyZPRO[pocetZnamok()] = znamka;
+		}
+	}
+	
+	void vypisZnamok() {
+		for(int znamka: znamkyZPRO) {
+			if(znamka == 0) {
+				break;
+			}else {
+				
+				System.out.print(znamka + ", ");
+			}
+		}
 	}
 
 	
